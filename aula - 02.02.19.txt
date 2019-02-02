@@ -1,0 +1,65 @@
+package aula;
+
+import java.util.Scanner;
+
+public class Aula0102 {
+
+	public static void main(String[] args) {
+		/*System.out.println("teste");*/
+		
+//		int n1 = 10;
+//		int n2 = 20;
+//		int n3 = 30;
+//		int n4 = 40;
+////	int n5 = 0;
+//		int produto = n1 + n2 / n3 * n4;
+//		int produtoFinal = n4 * produto + n3;
+//		System.out.println(produtoFinal);
+		
+//		Scanner Scan = new Scanner(System.in);
+//		System.out.println("Digite sua idade");
+//		int numero = Scan.nextInt();
+//		Scan.nextLine();
+//		System.out.println("Digite seu nome");
+//		String nome = Scan.nextLine();
+//		System.out.println(numero + nome);
+		
+//		System.out.println("Calculadora Fuctura");
+//		Scanner Scan = new Scanner(System.in);
+//		System.out.println("Digite seu nome!");
+//		String nome = Scan.nextLine();
+//		System.out.println("Digite o primeiro numero");
+//		int numero1 = Scan.nextInt();
+//		System.out.println("Digite o segundo numero");
+//		int numero2 = Scan.nextInt();
+//		int divide = numero1 / numero2;
+//		int soma = numero1 + numero2;
+//		int multiplica = numero1 * numero2;
+//		int subtrai = numero1 - numero2;
+//		System.out.println("Obrigado " +nome+ "\nO resultado da sua soma é: " +soma+ "\nDa sua divisão é: " +divide+
+//		"\nDa sua multiplicação é: " +multiplica+ "\nE da sua subtração é: " +subtrai);
+//		
+//		if (numero1 > 2) {
+//			
+//			System.out.println("Escolha um numero mais legal!");
+//			
+//		} else {
+//			System.out.println("E isso ai !");
+//		}
+		
+		System.out.println("++++++Pessoa++++++");
+		Scanner Scan = new Scanner(System.in);
+		System.out.println("Digite seu Nome:");
+		String nome = Scan.nextLine();
+		System.out.println("Digite sua Idade:");
+		int idade = Scan.nextInt();
+		Scan.nextLine();
+		System.out.println("Digite seu Sexo:");
+		String sexo = Scan.nextLine();
+		System.out.println("Digite seu ano de nascimento:");
+		String ano = Scan.nextLine();
+		System.out.println("++++++Pessoa++++++" + "\nNome: " +nome+ "  Idade: " +idade+ "\nSexo: " +sexo+ 
+				"  Ano de nascimento: "+ano);
+		
+	}
+}
