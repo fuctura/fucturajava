@@ -1,4 +1,4 @@
-package nossoMenu;
+Ôªøpackage nossoMenu;
 
 import java.util.Scanner;
 
@@ -8,15 +8,15 @@ public class Menu {
 		
 		Scanner scan = new Scanner(System.in);
 		Pessoa pessoa = new Pessoa();
-		//Inst‚ncia da classe pessoa, ou seja, o ato desta mesma sendo referenciada em pessoa.
+		//Inst√¢ncia da classe pessoa, ou seja, o ato desta mesma sendo referenciada em pessoa.
 		// sendo new pessoa a memoria ram separada para receber esses parametros
 		
 		char opcao ;
 		// Foi ultilizado o char ja que neste caso ultilizarems
-		//letras como a, b e c para chamar as opÁıes de caso
+		//letras como a, b e c para chamar as op√ß√µes de caso
 		
-		System.out.println("Escolha a opÁ„o");
-		opcao = scan.nextLine().charAt(0);//converÁ„o pde string para char
+		System.out.println("Escolha a op√ß√£o");
+		opcao = scan.nextLine().charAt(0);//conver√ß√£o pde string para char
 		
 		//o codigo acima usa do charAt(0); para iniciar o char como 0,
 		//sendo assim possivel atribuir valores de caracteres ao mesmo
@@ -35,7 +35,7 @@ public class Menu {
 			scan.nextLine();
 			System.out.println("Digite sua Cpf \n");
 			pessoa.setCpf(scan.nextLine());
-			System.out.println("Digite sua EndereÁo \n");
+			System.out.println("Digite sua Endere√ßo \n");
 			pessoa.setEndereco(scan.nextLine());
 			break;
 			}
@@ -45,8 +45,8 @@ public class Menu {
 				System.out.println(pessoa.getIdade());
 				System.out.println(pessoa.getCpf());
 				System.out.println(pessoa.getEndereco());
-			//o break foi usado para cancelar a opÁ„o de chamada de dados, afinal, se o caso for encerrado,
-			//n„o h· necessidade de retornar ao mesmo
+			//o break foi usado para cancelar a op√ß√£o de chamada de dados, afinal, se o caso for encerrado,
+			//n√£o h√° necessidade de retornar ao mesmo
 			}
 			default: {
 					System.out.println("Fim!!!!");

@@ -1,4 +1,4 @@
-package nossoMenu;
+﻿package nossoMenu;
 
 import java.util.Scanner;
 
