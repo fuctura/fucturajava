@@ -1,0 +1,60 @@
+package nossoMenu;
+
+import java.util.Scanner;
+
+public class Menu {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		Pessoa pessoa = new Pessoa();
+		//Instância da classe pessoa, ou seja, o ato desta mesma sendo referenciada em pessoa.
+		// sendo new pessoa a memoria ram separada para receber esses parametros
+		
+		char opcao ;
+		// Foi ultilizado o char ja que neste caso ultilizarems
+		//letras como a, b e c para chamar as opções de caso
+		
+		System.out.println("Escolha a opção");
+		opcao = scan.nextLine().charAt(0);//converção pde string para char
+		
+		//o codigo acima usa do charAt(0); para iniciar o char como 0,
+		//sendo assim possivel atribuir valores de caracteres ao mesmo
+		
+		switch(opcao){
+			case 'a': {System.out.println("----Dados pessoais do Paciente----");
+			/*System.out.println(pessoa.getNome());
+			System.out.println(pessoa.getIdade());
+			System.out.println(pessoa.getCpf());
+			System.out.println(pessoa.getEndereco());*/
+			
+			System.out.println("Digite seu Nome:  ");
+			pessoa.setNome(scan.nextLine());
+			System.out.println("Digite seu Idade  ");
+			pessoa.setIdade(scan.nextInt());
+			scan.nextLine();
+			System.out.println("Digite sua Cpf \n");
+			pessoa.setCpf(scan.nextLine());
+			System.out.println("Digite sua Endereço \n");
+			pessoa.setEndereco(scan.nextLine());
+			break;
+			}
+			
+			case 'b': {
+				System.out.println(pessoa.getNome());
+				System.out.println(pessoa.getIdade());
+				System.out.println(pessoa.getCpf());
+				System.out.println(pessoa.getEndereco());
+			//o break foi usado para cancelar a opção de chamada de dados, afinal, se o caso for encerrado,
+			//não há necessidade de retornar ao mesmo
+			}
+			default: {
+					System.out.println("Fim!!!!");
+					break;
+			}
+		}	
+	
+
+	}
+
+}
